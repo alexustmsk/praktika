@@ -1,0 +1,8 @@
+    public static void sort(int[] array) {
+        Arrays.sort(array);
+        for (int f = 0; f < array.length / 2; f++) {
+            int temp = array[f];
+            array[f] = array[array.length - 1 - f];
+            array[array.length - 1 - f] = temp;
+        }
+    }
